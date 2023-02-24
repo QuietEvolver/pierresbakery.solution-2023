@@ -17,19 +17,16 @@ _This project objective is to further explore and practice API's_
 A shape tracker application where a user should be able to type in an amount and be told triangle type.
 
 ## Setup/Installation Requirements
-<!-- - To get an API key for ExchangeRate-API click [here](https://github.com/QuietEvolver/ShapeTracker.Solution.git)
-- Input your email address and click the "Get Free Key" button.
-- You'll be prompted to create an account with your email, first name and a password. Agree to the terms of use and click "Get Started!"
-- At this point, you'll be able to access a dashboard that includes your API key as well as your remaining API calls for two weeks. -->
-<!-- - Clone or download to your local repository click  -->
-<!-- - add .env to our .gitignore file now.
-- create a .env file in the root directory of our project -->
-<!-- - The variable that we're storing in the .env is the key: API_KEY -->
 
-1. Clone the repo, click [here](https://github.com/QuietEvolver/ShapeTracker.Solution.git)
-2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "ShapeTracker".
-3. In the command line, run the command "dotnet run" to compile and execute the console application. Since this is a console application, you'll interact with it through text commands in your terminal.
-4. Optionally, you can run "dotnet build" to compile this console app without running it.
+- Install .Net 6 SDK:
+- Follow OS X and Windows Instructions
+- Clone this repo to a local directory
+- Using Terminal on OS X or PowerShell on Windows navigate to the top directory where this repo was cloned [here](https://github.com/QuietEvolver/pierresbakery.solution-2023.git):
+- Confirm all business logic tests pass with MSTest by running commands (not including the dollar symbol):
+$ dotnet restore ./PierresBakery.Tests
+$ dotnet test ./PierresBakery.Tests
+- Then run the program with command :
+$ dotnet run --project PierresBakery
 
 ## Known Bugs
 
