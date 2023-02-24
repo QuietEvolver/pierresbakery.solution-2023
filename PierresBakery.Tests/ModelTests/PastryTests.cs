@@ -6,18 +6,18 @@ using Pastry.Models;
 namespace Pastry.Tests
 {
   // [TestClass]
-  // public class TriangleTests : IDisposable
+  // public class PastryTests : IDisposable
   // { 
   //   // special method that will run between tests to perform cleanup: _instances through ClearAll(). Dispose()
   // public void Dispose()
   // {
-  //   Triangle.ClearAll(); // defined at end
+  //   Pastry.ClearAll(); // defined at end
   // }
   //   [TestMethod]
-  //   public void TriangleConstructor_CreatesInstanceOfTriangle_Triangle()
+  //   public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
   //   {
-  //     Triangle newTriangle = new Triangle(2, 3, 5, "isosceles"); // passes a length param property value
-  //     Assert.AreEqual(typeof(Triangle), newTriangle.GetType());
+  //     Pastry newPastry = new Pastry(2, 3, 5, "isosceles"); // passes a length param property value
+  //     Assert.AreEqual(typeof(Pastry), newPastry.GetType());
   //   }
 
   //   [TestMethod]
@@ -25,9 +25,9 @@ namespace Pastry.Tests
   //   {
   //     // Arrange
   //     int length1 = 3;
-  //     Triangle newTriangle = new Triangle(length1, 2, 8, "isosceles");
+  //     Pastry newPastry = new Pastry(length1, 2, 8, "isosceles");
   //     // Act (by calling a method or retreiving a property) ie. Side1
-  //     int result = newTriangle.Side1;
+  //     int result = newPastry.Side1;
   //     // Assert
   //     Assert.AreEqual(length1, result);
   //   }
@@ -36,12 +36,12 @@ namespace Pastry.Tests
   //   public void SetSide1_SetsValueOfSide1_Void()
   //   {
   //     // Arrange
-  //     Triangle newTriangle = new Triangle(3, 3, 8, "isosceles");
+  //     Pastry newPastry = new Pastry(3, 3, 8, "isosceles");
   //     int newLength1 = 44;
   //     // Act
-  //     newTriangle.Side1 = newLength1;
+  //     newPastry.Side1 = newLength1;
   //     // Assert
-  //     Assert.AreEqual(newLength1, newTriangle.Side1);
+  //     Assert.AreEqual(newLength1, newPastry.Side1);
   //   }
 
   //   // Side 2: testing for auto-implemented properties
@@ -50,9 +50,9 @@ namespace Pastry.Tests
   //   {
   //     // Arrange
   //     int length2 = 3;
-  //     Triangle newTriangle = new Triangle(2, length2, 8, "isosceles");
+  //     Pastry newPastry = new Pastry(2, length2, 8, "isosceles");
   //     // Act
-  //     int result = newTriangle.Side2;
+  //     int result = newPastry.Side2;
   //     // Assert
   //     Assert.AreEqual(length2, result);
   //   }
@@ -61,12 +61,12 @@ namespace Pastry.Tests
   //   public void SetSide2_SetsValueOfSide2_Void()
   //   {
   //     // Arrange
-  //     Triangle newTriangle = new Triangle(3, 4, 8, "isosceles");
+  //     Pastry newPastry = new Pastry(3, 4, 8, "isosceles");
   //     int newLength2 = 6;
   //     // Act
-  //     newTriangle.Side2 = newLength2;
+  //     newPastry.Side2 = newLength2;
   //     // Assert
-  //     Assert.AreEqual(newLength2, newTriangle.Side2);
+  //     Assert.AreEqual(newLength2, newPastry.Side2);
   //   }
 
   //   // Side 3: Accessing & Testing A Private Field through its Getter and Setter Methods
@@ -76,9 +76,9 @@ namespace Pastry.Tests
   //   {
   //     // Arrange
   //     int length3 = 55;
-  //     Triangle newTriangle = new Triangle(2, 3, length3, "isosceles");
+  //     Pastry newPastry = new Pastry(2, 3, length3, "isosceles");
   //     // Act
-  //     int result = newTriangle.GetSide3();
+  //     int result = newPastry.GetSide3();
   //     // Assert
   //     Assert.AreEqual(length3, result);
   //   }
@@ -87,86 +87,86 @@ namespace Pastry.Tests
   //   public void SetSide3_SetsValueOfSide3_Void()
   //   {
   //     // Arrange
-  //     Triangle newTriangle = new Triangle(3, 4, 8, "isosceles");
+  //     Pastry newPastry = new Pastry(3, 4, 8, "isosceles");
   //     int newLength3 = 6;
   //     // Act
-  //     newTriangle.SetSide3(newLength3);
+  //     newPastry.SetSide3(newLength3);
   //     // Assert
-  //     Assert.AreEqual(newLength3, newTriangle.GetSide3());
+  //     Assert.AreEqual(newLength3, newPastry.GetSide3());
   //   }
 
   //   // Testing CheckType() method
   //   [TestMethod]
-  //   public void CheckType_DeterminesWhenNotATriangle_String()
+  //   public void CheckType_DeterminesWhenNotAPastry_String()
   //   {
   //     // Arrange
-  //     Triangle notATriangle = new Triangle(3, 4, 88, "isosceles");
+  //     Pastry notAPastry = new Pastry(3, 4, 88, "isosceles");
   //     // Act
-  //     string triType = notATriangle.CheckType();
+  //     string triType = notAPastry.CheckType();
   //     // Assert
-  //     Assert.AreEqual("not a triangle", triType);
+  //     Assert.AreEqual("not a Pastry", triType);
   //   }
   //   // scalene
   //   [TestMethod]
   //   public void CheckType_DeterminesWhenScalene_String()
   //   {
   //     // Arrange
-  //     Triangle scaleneTri = new Triangle(3, 4, 5, "isosceles");
+  //     Pastry scaleneTri = new Pastry(3, 4, 5, "isosceles");
   //     // Act
   //     string triType = scaleneTri.CheckType();
   //     // Assert
-  //     Assert.AreEqual("scalene triangle", triType);
+  //     Assert.AreEqual("scalene Pastry", triType);
   //   }    
   //   // isosceles
   //   [TestMethod]
   //   public void CheckType_DeterminesWhenIsosceles_String()
   //   {
   //     // Arrange
-  //     Triangle isoscelesTri = new Triangle(5, 4, 4, "isosceles");
+  //     Pastry isoscelesTri = new Pastry(5, 4, 4, "isosceles");
   //     // Act
   //     string triType = isoscelesTri.CheckType();
   //     // Assert
-  //     Assert.AreEqual("isosceles triangle", triType);
+  //     Assert.AreEqual("isosceles Pastry", triType);
   //   }
 
   //   [TestMethod]
   //   public void CheckType_DeterminesWhenEquilateral_String()
   //   {
   //     // Arrange
-  //     Triangle equiTri = new Triangle(4, 4, 4, "isosceles");
+  //     Pastry equiTri = new Pastry(4, 4, 4, "isosceles");
   //     // Act
   //     string triType = equiTri.CheckType();
   //     // Assert
-  //     Assert.AreEqual("equilateral triangle", triType);
+  //     Assert.AreEqual("equilateral Pastry", triType);
   //   }
 
   //   // GetAll() method testing
   //   [TestMethod]
-  //   public void GetAll_ReturnsAllTriangleInstances_List()
+  //   public void GetAll_ReturnsAllPastryInstances_List()
   //   {
   //     // Arrange
-  //     Triangle tri1 = new Triangle(2, 2, 9, "isosceles");
-  //     Triangle tri2 = new Triangle(21, 3, 9, "isosceles");
-  //     Triangle tri3 = new Triangle(1, 3, 9, "isosceles");
-  //     List<Triangle> expected = new List<Triangle> { tri1, tri2, tri3 };
+  //     Pastry tri1 = new Pastry(2, 2, 9, "isosceles");
+  //     Pastry tri2 = new Pastry(21, 3, 9, "isosceles");
+  //     Pastry tri3 = new Pastry(1, 3, 9, "isosceles");
+  //     List<Pastry> expected = new List<Pastry> { tri1, tri2, tri3 };
   //     // Act
-  //     List<Triangle> actualResult = Triangle.GetAll();
+  //     List<Pastry> actualResult = Pastry.GetAll();
   //     // Assert
   //     CollectionAssert.AreEqual(expected, actualResult);
   //   }
 
   //     [TestMethod]
-  //   public void ClearAll_DeletesAllTriangleInList_Void()
+  //   public void ClearAll_DeletesAllPastryInList_Void()
   //   {
   //     // Arrange
-  //     Triangle tri1 = new Triangle(2, 2, 9, "isosceles");
-  //     Triangle tri2 = new Triangle(21, 3, 9, "isosceles");
-  //     Triangle tri3 = new Triangle(1, 3, 9, "isosceles");
-  //     List<Triangle> expected = new List<Triangle> { };
+  //     Pastry tri1 = new Pastry(2, 2, 9, "isosceles");
+  //     Pastry tri2 = new Pastry(21, 3, 9, "isosceles");
+  //     Pastry tri3 = new Pastry(1, 3, 9, "isosceles");
+  //     List<Pastry> expected = new List<Pastry> { };
   //     // Act
-  //     Triangle.ClearAll();
+  //     Pastry.ClearAll();
   //     // Assert
-  //     CollectionAssert.AreEqual(expected, Triangle.GetAll());
+  //     CollectionAssert.AreEqual(expected, Pastry.GetAll());
   //   }
   // }
 }
