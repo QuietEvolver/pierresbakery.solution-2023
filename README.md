@@ -1,20 +1,21 @@
-# _Shape Tracker_
+# _Pierre's Bakery_
 
 #### By _Vera Weikel_
 
-#### _A project built to create a Shape Tracker application_
+#### _A project built to create a Pierre's Bakery application_
 
 ## Technologies Used
 
 - _C#_
+- _TDD_
 
 ## Goal
 
-_This project objective is to further explore and practice API's_
+_This project objective is to further explore and practice Test Driven Develeopment using C#_
 
 ## Description
 
-A shape tracker application where a user should be able to type in an amount and be told triangle type.
+A storefront application where a user should be able to type in an amount and be told cost using test driven development.
 
 ## Setup/Installation Requirements
 
