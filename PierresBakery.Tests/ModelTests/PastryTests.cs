@@ -1,9 +1,9 @@
 using System; // for IDisposable
 using System.Collections.Generic; // Linq List
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CSharpPrjNm.Models;
+using Pastry.Models;
 
-namespace CSharpPrjNm.Tests
+namespace Pastry.Tests
 {
   // [TestClass]
   // public class TriangleTests : IDisposable
