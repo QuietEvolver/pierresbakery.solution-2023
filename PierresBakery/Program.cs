@@ -31,6 +31,11 @@ namespace PierresBakery
 
       Console.WriteLine("Please enter the number of pastries:");
       string userPastryInput = Console.ReadLine();  
+
+      Console.WriteLine("User Inputs: bread/pastry:", userBreadInput, userPastryInput);
+        int breadNumber = Convert.ToInt32(userBreadInput);  
+        int pastryNumber = Convert.ToInt32(userPastryInput); 
+
       // Console.WriteLine("Enter another number:");
       // string stringNumber2 = Console.ReadLine();  
       // Console.WriteLine("Enter a third number:");
