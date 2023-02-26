@@ -10,11 +10,9 @@ namespace PierresBakery
       Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
       Console.WriteLine("Welcome to the Pierre's Bakery app!");
       Console.WriteLine("Pierre offers the following deal for Bread: Buy 2, get 1 free. A single loaf costs $5, then:");
-      Console.WriteLine("two loaves costs $10");
-      Console.WriteLine("three loaves cost $10");
+      Console.WriteLine("two/three loaves costs $10");
       Console.WriteLine("four loaves costs $15");
-      Console.WriteLine("five loaves cost $20");
-      Console.WriteLine("six loaves costs $20");
+      Console.WriteLine("five/six loaves cost $20");
       Console.WriteLine("seven loaves cost $25");
       Console.WriteLine("Can you see a pattern? Every 3rd loaf of bread is free.");
 
@@ -27,8 +25,12 @@ namespace PierresBakery
       Console.WriteLine("seven pastries costs $12");
       Console.WriteLine("eight pastries costs $12");
       Console.WriteLine("Can you see a pattern? Every 4th pastry is free.");
-      // Console.WriteLine("Please enter a number:");
-      // string stringNumber1 = Console.ReadLine();  
+
+      Console.WriteLine("Please enter the number of loaves:");
+      string userBreadInput = Console.ReadLine();  
+
+      Console.WriteLine("Please enter the number of pastries:");
+      string userPastryInput = Console.ReadLine();  
       // Console.WriteLine("Enter another number:");
       // string stringNumber2 = Console.ReadLine();  
       // Console.WriteLine("Enter a third number:");
