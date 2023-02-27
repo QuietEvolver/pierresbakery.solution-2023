@@ -14,6 +14,13 @@ namespace PierresBakery.Tests
       Bread newBread = new Bread(1);
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
+  
+    [TestMethod]
+    public void GetEmptyNumberOfLoaves_SetNumberOfEmptyLoaves_Bread()
+    {
+      Bread newBread = new Bread();
+      Assert.AreEqual(typeof(Bread), newBread.GetType());
+    }
   }
   // public class BreadTests : IDisposable
   // { 
