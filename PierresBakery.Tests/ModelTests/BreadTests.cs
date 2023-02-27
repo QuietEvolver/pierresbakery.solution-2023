@@ -4,24 +4,25 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierresBakery.Models;
 
 namespace PierresBakery.Tests
-{
+{  
   [TestClass]
   public class BreadTests
   {
-    [TestMethod]
-    public void GetNumberOfLoaves_SetNumberOfLoaves_Bread()
-    {
-      Bread newBread = new Bread(1);
-      Assert.AreEqual(typeof(Bread), newBread.GetType());
-    }
-  
     [TestMethod]
     public void GetEmptyNumberOfLoaves_SetNumberOfEmptyLoaves_Bread()
     {
       Bread newBread = new Bread();
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
+  
+    [TestMethod]
+    public void GetNumberOfLoaves_SetNumberOfLoaves_Bread()
+    {
+      Bread newBread = new Bread(1);
+      Assert.AreEqual(typeof(Bread), newBread.GetType());
+    }
   }
+
   // public class BreadTests : IDisposable
   // { 
   //   // special method that will run between tests to perform cleanup: _instances through ClearAll(). Dispose()

@@ -9,6 +9,13 @@ namespace PierresBakery.Tests
   public class PastryTests
   {
     [TestMethod]
+    public void GetEmptyNumberOfLoaves_SetNumberOfEmptyLoaves_Bread()
+    {
+      Bread newBread = new Bread();
+      Assert.AreEqual(typeof(Bread), newBread.GetType());
+    }
+    
+    [TestMethod]
     public void GetNumberOfPastries_SetNumberOfPastries_Pastry()
     {
       Pastry newPastry = new Pastry(1);
