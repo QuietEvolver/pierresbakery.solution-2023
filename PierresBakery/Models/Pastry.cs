@@ -12,10 +12,10 @@ namespace PierresBakery.Models
       PastryNumber = 0;
     }
 
-    // public Pastry( int userPastryInput)
-    // {
-    //   PastryNumber = userPastryInput;
-    // }
+    public Pastry( int userPastryInput)
+    {
+      PastryNumber = userPastryInput;
+    }
 
     // public int TotalPastryPrice4for3() 
     // {
