@@ -11,7 +11,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void GetNumberOfLoaves_SetNumberOfLoaves_Bread()
     {
-      Bread bread = new Bread(1);
+      Bread newBread = new Bread(1);
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
   }
