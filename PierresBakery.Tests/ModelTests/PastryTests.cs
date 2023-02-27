@@ -9,10 +9,10 @@ namespace PierresBakery.Tests
   public class PastryTests
   {
     [TestMethod]
-    public void GetEmptyNumberOfLoaves_SetNumberOfEmptyLoaves_Bread()
+    public void GetEmptyNumberOfLoaves_SetNumberOfEmptyLoaves_Pastry()
     {
-      Bread newBread = new Bread();
-      Assert.AreEqual(typeof(Bread), newBread.GetType());
+      Pastry newPastry = new Pastry();
+      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
     
     [TestMethod]
@@ -20,6 +20,14 @@ namespace PierresBakery.Tests
     {
       Pastry newPastry = new Pastry(1);
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
+    
+    [TestMethod]
+    public void GetPastryPrice_SetCorrectPastryPrice_Int()
+    {
+      int userPastryInput = 3; 
+      Pastry newPastry = new Pastry(userPastryInput);
+      Assert.AreEqual(6, newPastry.TotalPastryPrice4for3());
     }
   }
   // [TestClass]
