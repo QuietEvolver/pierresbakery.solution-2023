@@ -16,7 +16,12 @@ namespace PierresBakery.Models
 
     public int TotalBreadPrice3for2() 
     {
-      return (BreadNumber * 5) - (5 * 2); // (BreadNumber * price) - (price * 2)
+      return (BreadNumber * 5) - Bogo3for2(); // (BreadNumber * price) - (price * (n/#disc))
+    }
+
+    public int Bogo3for2()
+    {
+      (5 * BreadNumber/3); 
     }
     // public string CheckType()
     // {
