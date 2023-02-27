@@ -1,11 +1,20 @@
 using System; // for IDisposable
 using System.Collections.Generic; // Linq List
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Bread.Models;
+using PierresBakery.Models;
 
-namespace Bread.Tests
+namespace PierresBakery.Tests
 {
-  // [TestClass]
+  [TestClass]
+  public class BreadTests
+  {
+    [TestMethod]
+    public void GetNumberOfLoaves_SetNumberOfLoaves_Bread()
+    {
+      Bread bread = new Bread(1);
+     Assert.AreEqual(typeof(Bread), newBread.GetType());
+    }
+  }
   // public class BreadTests : IDisposable
   // { 
   //   // special method that will run between tests to perform cleanup: _instances through ClearAll(). Dispose()
