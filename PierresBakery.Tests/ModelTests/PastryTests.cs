@@ -11,7 +11,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void GetNumberOfPastries_SetNumberOfPastries_Pastry()
     {
-      Pastry Pastry = new Pastry(1);
+      Pastry newPastry = new Pastry(1);
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
   }
