@@ -12,19 +12,19 @@ namespace PierresBakery.Models
       BreadNumber = 0;
     }
 
-    public Bread( int userBreadInput)
-    {
-      BreadNumber = userBreadInput;
-    }
+    // public Bread( int userBreadInput)
+    // {
+    //   BreadNumber = userBreadInput;
+    // }
 
-    public int TotalBreadPrice3for2() 
-    {
-      return (BreadNumber * 5) - Bogo3for2(); // (BreadNumber * price) - (price * (n/#disc))
-    }
+    // public int TotalBreadPrice3for2() 
+    // {
+    //   return (BreadNumber * 5) - Bogo3for2(); // (BreadNumber * price) - (price * (n/#disc))
+    // }
 
-    public int Bogo3for2()
-    {
-      return (5 * BreadNumber/3); 
-    }
+    // public int Bogo3for2()
+    // {
+    //   return (5 * BreadNumber/3); 
+    // }
   }  
 }
