@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using PierresBakery.Models;
 
 namespace PierresBakery
@@ -32,14 +33,14 @@ namespace PierresBakery
       Console.WriteLine("Please enter the number of pastries:");
       string userPastryInput = Console.ReadLine();  
 
-      Console.WriteLine("User Inputs: bread: " + userBreadInput);
-      Console.WriteLine("User Inputs: pastry: " + userPastryInput);
+      Console.WriteLine("Requested: Breads = " + userBreadInput);
+      Console.WriteLine("Requested: Pastries = " + userPastryInput);
 
-      int breadNumber = Convert.ToInt32(userBreadInput);  
-      int pastryNumber = Convert.ToInt32(userPastryInput); 
 
     //   try
     //   {
+      int breadNumber = Convert.ToInt32(userBreadInput);  
+      int pastryNumber = Convert.ToInt32(userPastryInput); 
     //     // properties from the ConsoleColor class
     //     Console.BackgroundColor = ConsoleColor.White;
     //     Console.ForegroundColor = ConsoleColor.Black;

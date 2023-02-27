@@ -1,5 +1,5 @@
 using System; // for IDisposable
-using System.Collections.Generic; // Linq List
+using System.Collections.Generic; 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierresBakery.Models;
 
