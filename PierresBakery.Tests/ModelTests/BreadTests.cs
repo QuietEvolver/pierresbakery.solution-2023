@@ -12,7 +12,7 @@ namespace PierresBakery.Tests
     public void GetNumberOfLoaves_SetNumberOfLoaves_Bread()
     {
       Bread bread = new Bread(1);
-     Assert.AreEqual(typeof(Bread), newBread.GetType());
+      Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
   }
   // public class BreadTests : IDisposable
