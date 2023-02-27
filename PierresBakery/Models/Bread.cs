@@ -21,10 +21,10 @@ namespace PierresBakery.Models
     {
       return (BreadNumber * 5);// - Bogo3for2(); // (BreadNumber * price) - (price * (n/#disc))
     }
-    // public int Bogo3for2()
-    // {
-    //   return (5 * BreadNumber/3); 
-    // }
 
+    public int Bogo3for2()
+    {
+    //   return (5 * BreadNumber/3); 
+    }
   }  
 }
