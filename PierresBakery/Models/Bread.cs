@@ -12,10 +12,10 @@ namespace PierresBakery.Models
       BreadNumber = 0;
     }
 
-    public Bread( int userBreadInput)
-    {
-      BreadNumber = userBreadInput;
-    }
+    // public Bread( int userBreadInput)
+    // {
+    //   BreadNumber = userBreadInput;
+    // }
 
     // public int TotalBreadPrice3for2() 
     // {
