@@ -23,6 +23,14 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
+    public void GetBread_SetBreadQtyFromUserBreadInput_Int()
+    {
+      int userBreadInput = 2; 
+      Bread newBread = new Bread(userBreadInput);
+      Assert.AreEqual(2, newBread.BreadNumber);
+    }
+
+    [TestMethod]
     public void GetBreadPrice_SetCorrectBreadPrice_Int()
     {
       int userBreadInput = 2; 
