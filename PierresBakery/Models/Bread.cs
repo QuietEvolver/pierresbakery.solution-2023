@@ -17,15 +17,19 @@ namespace PierresBakery.Models
       BreadNumber = userBreadInput;
     }
 
+    public int TotalBreadPrice() 
+    {
+      return (BreadNumber * 5);
+    }
+
     public int Bogo3for2()
     {
       return 5 * BreadNumber/3; 
     }
-
+  
     public int TotalBreadPrice3for2() 
     {
-      return (BreadNumber * 5);// - Bogo3for2();
+      return (BreadNumber * 5) - Bogo3for2();
     }
-
   }  
 }
