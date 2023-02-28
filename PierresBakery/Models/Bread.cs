@@ -24,7 +24,7 @@ namespace PierresBakery.Models
 
     public int Bogo3for2()
     {
-    //   return (5 * BreadNumber/3); 
+      return 5 * BreadNumber/3; 
     }
   }  
 }
