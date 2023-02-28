@@ -21,6 +21,7 @@ namespace PierresBakery.Models
     {
       return 5 * BreadNumber/3; 
     }
+    
     public int TotalBreadPrice3for2() 
     {
       return (BreadNumber * 5);// - Bogo3for2(); // (BreadNumber * price) - (price * (n/#disc))
