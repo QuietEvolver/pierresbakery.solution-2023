@@ -46,7 +46,17 @@ namespace PierresBakery.Tests
       Pastry newPastry = new Pastry(userPastryInput);
       Assert.AreEqual(1, newPastry.Bogo4for3());
     }
+
+    [TestMethod]
+    public void GetPastryTotalBogo4for3_SetCorrectPastryTotalBogo4for3_Int()
+    {
+      int userPastryInput = 3; 
+      Pastry newPastry = new Pastry(userPastryInput);
+      Assert.AreEqual(6, newPastry.TotalPastryPrice4for3());
+    }
   }
+}
+
   // [TestClass]
   // public class PastryTests : IDisposable
   // { 
@@ -211,4 +221,4 @@ namespace PierresBakery.Tests
   //     CollectionAssert.AreEqual(expected, Pastry.GetAll());
   //   }
   // }
-}
+// }
