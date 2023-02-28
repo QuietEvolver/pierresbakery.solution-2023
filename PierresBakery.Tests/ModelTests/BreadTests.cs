@@ -35,7 +35,7 @@ namespace PierresBakery.Tests
     {
       int userBreadInput = 2; 
       Bread newBread = new Bread(userBreadInput);
-      Assert.AreEqual(10, newBread.TotalBreadPrice3for2());
+      Assert.AreEqual(10, newBread.TotalBreadPrice());
     }
 
     [TestMethod]
@@ -44,6 +44,14 @@ namespace PierresBakery.Tests
       int userBreadInput = 2; 
       Bread newBread = new Bread(userBreadInput);
       Assert.AreEqual(3, newBread.Bogo3for2());
+    }
+
+    [TestMethod]
+    public void GetBreadTotalBogo_SetCorrectBreadTotalBogo_Int()
+    {
+      int userBreadInput = 2; 
+      Bread newBread = new Bread(userBreadInput);
+      Assert.AreEqual(10, newBread.TotalBreadPrice3for2());
     }
   }
 
