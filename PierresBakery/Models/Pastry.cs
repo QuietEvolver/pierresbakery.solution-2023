@@ -19,7 +19,7 @@ namespace PierresBakery.Models
 
     public int Bogo4for3()
     {
-     // return (2 * PastryNumber/4); 
+     return (2 * PastryNumber/4); 
     }
 
     public int TotalPastryPrice4for3() 
