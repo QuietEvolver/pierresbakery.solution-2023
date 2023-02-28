@@ -29,7 +29,7 @@ namespace PierresBakery.Models
 
     public int TotalPastryPrice4for3() 
     {
-     return (PastryNumber * 2); // - Bogo4for3(); // (PastryNumber * price) - (price * (n/#disc))
+     // return (PastryNumber * 2); // - Bogo4for3(); // (PastryNumber * price) - (price * (n/#disc))
     }
   }
 }
