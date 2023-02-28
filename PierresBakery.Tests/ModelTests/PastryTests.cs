@@ -36,7 +36,7 @@ namespace PierresBakery.Tests
     {
       int userPastryInput = 3; 
       Pastry newPastry = new Pastry(userPastryInput);
-      Assert.AreEqual(6, newPastry.TotalPastryPrice4for3());
+      Assert.AreEqual(6, newPastry.TotalPastryPrice());
     } 
 
     [TestMethod]
