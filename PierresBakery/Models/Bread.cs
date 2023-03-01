@@ -33,7 +33,7 @@ namespace PierresBakery.Models
       int price = 5;
       int discount = BreadNumber / 3;
       int total = (price * BreadNumber) - (price * discount);
-
+      
       return total;
     }
   }  
