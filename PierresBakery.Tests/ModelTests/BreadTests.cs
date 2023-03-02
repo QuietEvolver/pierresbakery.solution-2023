@@ -54,3 +54,4 @@ namespace PierresBakery.Tests
       Assert.AreEqual(10, newBread.TotalBreadPrice3for2());
     }
   }
+}

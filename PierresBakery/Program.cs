@@ -43,6 +43,8 @@ namespace PierresBakery
       Pastry newPastry = new Pastry(pastryNumber);
       
       int total = newBread.TotalBreadPrice3for2() + newPastry.TotalPastryPrice4for3();  
+      Console.WriteLine("Total Bread: " +  newBread.TotalBreadPrice3for2()); 
+      Console.WriteLine("Total Pastry: " +  newPastry.TotalPastryPrice4for3()); 
       Console.WriteLine("Total Cost: " + total); 
     }
   }

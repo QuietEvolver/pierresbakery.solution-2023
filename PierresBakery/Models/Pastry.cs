@@ -24,17 +24,17 @@ namespace PierresBakery.Models
 
     public int Bogo4for3()
     {
-     return (2 * PastryNumber/4); 
+     return (2 * (PastryNumber/4)); 
     }
 
     public int TotalPastryPrice4for3() 
     { 
-      // return TotalPastryPrice() - Bogo4for3();
-      int price = 2;
-      int discount = PastryNumber / 4;
-      int total = (price * PastryNumber) - (price * discount);
+      return TotalPastryPrice() - Bogo4for3();
+      // int price = 2;
+      // int discount = PastryNumber / 4;
+      // int total = (price * PastryNumber) - (price * discount);
 
-      return total;
+      // return total;
     }
   }
 }
